@@ -1,0 +1,47 @@
+.way-js__description {
+  line-height: 18px;
+  font-family: @font-second;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.way-js__books {
+  margin-bottom: 11px;
+}
+
+.way-js__range-controls {
+  width: 280px;
+  height: 3px;
+  margin: 0 auto;
+  background-color: @range-color;
+}
+
+.way-js__bar {
+  width: 24%;
+  height: 3px;
+  background-color: @accent-color;
+}
+
+.way-js {
+  margin-bottom: 47px;
+}
+
+@media(min-width: @desktop-width) {
+  .way-js__range-controls {
+    display: none;
+  }
+
+  .way-js {
+    border-bottom: 2px solid @heading-line;
+  }
+
+  .way-js__block {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .way-js__description {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+}

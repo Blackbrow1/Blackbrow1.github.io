@@ -1,0 +1,29 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  margin: 0;
+  padding: 0;
+  font-family: "Consolas", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  color: @main-text-color;
+  background-color: @bg-color;
+  overflow-x: hidden;
+
+  min-height: 100%;
+}
+
+.page__body-wrap {
+  .wrapper-mob();
+  padding-top: 38px;
+}
+
+@media(min-width: @desktop-width) {
+  .page__body-wrap {
+    .wrapper-desktop();
+    padding-top: 96px;
+  }
+}

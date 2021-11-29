@@ -1,0 +1,58 @@
+.server-js {
+  span {
+    font-weight: 400;
+  }
+
+  padding-bottom: 50px;
+}
+
+.server-js__quote {
+  margin: 0;
+  font-size: 14px;
+  line-height: 26px;
+  font-style: italic;
+  color: @quote-text;
+  letter-spacing: 0px;
+  margin-bottom: 20px;
+}
+
+.server-js__fig {
+  margin: 0;
+  font-family: "OpenSans", Helvetica, sans-serif;
+  margin-left: 45px;
+  position: relative;
+
+  figcaption {
+    font-style: italic;
+    color: @cite-color;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/quote.svg");
+    top: 0;
+    left: -45px;
+  }
+}
+
+@media(min-width: @desktop-width) {
+  .server-js__fig {
+    margin-left: 80px;
+    font-size: 18px;
+    line-height: 26px;
+
+    &::before {
+      transform: scale(1.67);
+      left: -70px;
+      top: 11px;
+    }
+  }
+
+  .server-js__quote {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
